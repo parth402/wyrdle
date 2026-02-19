@@ -12,10 +12,12 @@
   let currentGuess = '';
   let gameOver = false;
 
+  // Find the little box on the board at this row and column.
   function getTile(row, col) {
     return document.getElementById('tile-' + row + '-' + col);
   }
 
+  // Show the letters the player has typed so far in the current row of boxes.
   function updateTilesForCurrentGuess() {
     for (let c = 0; c < COLS; c++) {
       const tile = getTile(currentRow, c);
@@ -119,7 +121,7 @@
     }
   }
 
-  // Virtual keyboard: click
+  // Virtual keyboard
   document.querySelectorAll('.key').forEach(function (keyEl) {
     keyEl.addEventListener('click', function () {
       const key = keyEl.getAttribute('data-key');
