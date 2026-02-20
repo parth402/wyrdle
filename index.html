@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        <div id="toast-message" class="toast-message" aria-hidden="true"></div>
         <header>
             <h1>WYRDLE</h1>
         </header>
@@ -53,6 +54,21 @@
                 <button type="button" class="key" data-key="M">M</button>
                 <button type="button" class="key key-wide" data-key="BACKSPACE">⌫</button>
             </div>
+        </div>
+    </div>
+
+    <div id="welcome-modal" class="welcome-modal show" aria-hidden="false">
+        <div class="welcome-box">
+            <h2>Welcome to Wyrdle</h2>
+            <button type="button" id="welcome-play-btn" class="play-again-btn">Play</button>
+        </div>
+    </div>
+
+    <div id="game-over-modal" class="game-over-modal" aria-hidden="true">
+        <div class="game-over-box">
+            <h2 id="game-over-title"></h2>
+            <p id="game-over-word" class="game-over-word"></p>
+            <button type="button" id="play-again-btn" class="play-again-btn">Play again</button>
         </div>
     </div>
     

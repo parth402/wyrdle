@@ -125,6 +125,122 @@ header h1 {
     animation: flip 0.6s ease;
 }
 
+.toast-message {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #3a3a3c;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.toast-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.welcome-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s, visibility 0.25s;
+}
+
+.welcome-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.welcome-box {
+    background-color: #121213;
+    border: 2px solid #3a3a3c;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    max-width: 320px;
+    width: 90%;
+}
+
+.welcome-box h2 {
+    font-size: 28px;
+    margin: 0 0 24px;
+    color: #fff;
+}
+
+.game-over-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s, visibility 0.25s;
+}
+
+.game-over-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.game-over-box {
+    background-color: #121213;
+    border: 2px solid #3a3a3c;
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    max-width: 320px;
+    width: 90%;
+}
+
+.game-over-box h2 {
+    font-size: 28px;
+    margin: 0 0 16px;
+    color: #fff;
+}
+
+.game-over-word {
+    font-size: 18px;
+    color: #787c7e;
+    margin: 0 0 24px;
+}
+
+.game-over-word:empty {
+    display: none;
+}
+
+.play-again-btn {
+    background-color: #6aaa64;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.play-again-btn:hover {
+    background-color: #5a9a54;
+}
+
 .keyboard-container {
     display: flex;
     flex-direction: column;
@@ -185,7 +301,7 @@ header h1 {
 }
 
 .key.absent {
-    background-color: #787c7e;
+    background-color: #3a3a3c;
     color: #ffffff;
 }
 
