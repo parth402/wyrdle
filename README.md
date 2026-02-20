@@ -1,4 +1,5 @@
-Welcome to Wyrdle
+Welcome to Wyrdle!
+
 A Wordle-style word guessing game 
 
 ## Overview
